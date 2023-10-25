@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic.1164.all;
+
+entity yari_toplayici is
+	Port( a : in STD_LOGIC;
+		  b : in STD_LOGIC;
+		  s : out STD_LOGIC;
+		  cout : out STD_LOGIC);
+
+end yari_toplayici;
+
+architecture yapisal of yari_toplayici is
+begin
+
+s <= a xor b;
+cout <= a and b;
+
+end yapisal;

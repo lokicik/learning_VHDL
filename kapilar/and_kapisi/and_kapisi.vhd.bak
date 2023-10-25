@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity and_kapisi is
+  port (
+    a, b: in std_logic;
+    F: out std_logic
+  );
+end entity and_kapisi;
+
+architecture mim1 of and_kapisi is 
+begin 
+  F <= a and b;
+end mim1;
+

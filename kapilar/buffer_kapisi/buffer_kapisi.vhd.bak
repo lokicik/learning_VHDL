@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity buffer_kapisi is
+  port (
+    a: in std_logic;
+    F: out std_logic
+  );
+end entity buffer_kapisi;
+
+architecture mim1 of buffer_kapisi is 
+begin 
+  F <= a; 
+end mim1;

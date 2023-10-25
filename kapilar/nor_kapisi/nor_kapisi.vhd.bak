@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity nor_kapisi is
+  port (
+    a, b: in std_logic;
+    F: out std_logic
+  );
+end entity nor_kapisi;
+
+architecture mim1 of nor_kapisi is 
+begin 
+  F <= not (a or b);
+end mim1;
